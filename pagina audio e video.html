@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio e video</title>
+</head>
+<body>
+    <h1>Utilização de Audio</h1>
+        <p>Nesse exemplos veremos como fazer a inserção e utilização de audios em nosso código e no nosso site.</p>
+
+        <audio preload="metadata" controls loop>
+            <source src="midia/As You Fade Away - NEFFEX.mp3" type="audio/mpeg">
+            <!-- Para fazer a reprodução correta do arquivo em audio usaremos esse exemplo no código
+                <audio preload="metadata" controls loop>
+            <source src="midia/As You Fade Away - NEFFEX.mp3" type="audio/mpeg">
+            <source src="midia/As You Fade Away - NEFFEX.ogg" type="audio/ogg">
+            <source src="midia/As You Fade Away - NEFFEX.wav" type="audio/wav">
+            <p> O seu navegar infelizmente não e compatível com a reprodução de audio</p> <essa msg so sera exibida se nenhum dos arquivos acima conseguirem ser reproduzidos>
+                </audio>
+             -->
+        </audio> 
+
+        <p>nesse exemplo acima o código ficou escrito da seguinte forma</p>
+        <pre>
+
+audio preload="metadata" controls loop
+    source src="midia/As You Fade Away - NEFFEX.mp3" type="audio/mpeg"
+    source src="midia/As You Fade Away - NEFFEX.ogg" type="audio/ogg"
+    source src="midia/As You Fade Away - NEFFEX.wav" type="audio/wav"
+    p O seu navegar infelizmente não e compatível com a reprodução de audio /p 
+/audio    
+        </pre>
+
+        <img src="midia/img.png" alt="Img Exemplo">
+
+        <P>Temos que levar em consideração que a mesma logica usada na responsividade das imagens e aplica aos audios ele sempre seguira essa sequencia de reprodução MP3 - OGG - WAV caso ele não tenha conseguido reproduzi nenhum dos arquivos ele vai apresentar a mensagem contida no "p"</P>
+        <p>o parâmetros "preload=" e "controls" são obrigatórios</p>
+    
+    <h1>Videos de Hospedagem Propriá</h1>
+        <p>Agora veremos como podemos incorporar um video com a hospedagem propiá ou seja interna no nosso sistema</p>
+
+        <video poster="img/furiaM.png" preload="metadata" controls width="300px">
+            <source src="midia/vid.mp4" type="video/mp4">
+        </video>
+
+        <p>o código para implementação de videos é exatamente igual ao de implementação de audios segue imagem abaixo com algumas diferenças</p>
+            <img src="midia/vidcod.png" alt="Exemplo Codigo">
+        <p>Nem todos os navegadores tem seus formatos nativos para reprodução iguais segue um imagem abaixo de todos os formatos e em quais sites eles são aceitos</p>
+            <img src="midia/vidnav.png" alt="Img Navegadores">
+        <p>Para voltar a pagina principal dos exercícios Clique <a href="../Ex 006/index.html" target="_self" rel="prev">Aqui.</a></p>
+
+    <h1>Videos anexados ou hospedados de forma externa</h1>
+        <p>Nesse exemplo veremos como fazer o anexo ao código de videos com links externos ou seja hospedados fora do seu servidor</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p> nesse caso de forma simples usamos a propia ferramenta de compartilhamento do <abbr title="Plataforma de compartilhamento de videos">YouTube</abbr> assim selecionando a opção "Incorporar".</p>
+        <p>Para voltar a pagina principal Clique <a href="index.html" target="_self" rel="prev">Aqui.</a></p>
+</body>
+</html>

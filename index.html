@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Desafios/imagens/icone-twitter.png" type="image/x-icon">
+    <title>Ex 006 - Formatação de textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pricipais Fomataçãos</h1>
+        <h2>Negrito / Destaques</h2>
+            <p>Nessa Frase temos um termos em <b>Negrito</b> usando a TAG B (de Fomra não semantica)</p>
+            <p>Já nessa outra frase, temos o exempl usando a forma correta <strong>Com a linha de codigo Strong /Strong</strong> (Usada Semanticamente de forma correta)</p>
+        <h2>Itálico / Ênfase</h2> 
+            <p>Já nesse exemplo, vamos usar um termo em <i>itálico usando a TAG I (De fomra não semantica)</i></p>   
+            <p>Já nesses outro Exemplo, usaremos o termo correto para o <i>Itálico usando o comando Ctrl+Shift+P Usando o o comando Emmet:Wrap with Abbreviation</i></p>
+            <p>Nesse exemplo, usamos o termo em <em>ênfase usando a tag EM (de forma semântica)</em></p>
+        <h2>Texto Marcado</h2>
+            <p>Podemos criar também um <mark style="background-color: rgb(250, 0, 0);">texto marcado usando a tag MARK</mark></p>
+            <p>E no paragrafo, temos <mark>Outro texto marcado</mark> no final</p>
+        <h2>Texto grande e pequeno</h2>
+            <p>Estamos criando um <big>texto grande usando a tag big (Fora de samantica)</big> e outro <small>pequeno usando a tag small (porem a tag small ainda e semantica)</small> nesse paragrafo.</p>
+        <h2>Texto excluido ou deletado</h2>
+            <p>Aqui nesse exemplo vemos a forma de incluir um texto <del>excluido que deve ser lido</del> usando a TAG del /del (de forma semantica) mas não deve ser lelado em consideração</p>
+        <h2>Texto inserido</h2>
+            <p>Já nesse outro explo podemos ver a <ins>forma de incluir um texto que foi inserido</ins> no texto apos seu tempo de revisão ou para quaisquer futuras correções Usando a TAG ins /ins (de forma semantica)</p>
+        <h2>Texto Sobrescrito</h2>
+            <p>Para inserir numeros que ficam alocados acima do texto padrão porem sem invadir o espaço da coluna acima EX: x<sup>20</sup>+3 Usando a TAG sup /sup (de forma semantica)</p>
+        <h2>Texto Subscrito</h2>
+            <p>Para inserir textos da mesma logica acima porem usada para ser utilizada abaixo da linha do texto sem invadir a coluna abaixo Ex: H<sub>2</sub>O Usando a TAG sub /sub (de forma semantica)</p>
+    <h1>Outras Formatações</h1>
+        <h2>Código fonte</h2>
+            <p>O comando <code>document class="getElementby"(TESTE)</code> é escrito em JavaScript.<br> para melhor viasualização usamos o codigo code /code de (de forma semantica) para espaçar as fontes de forma mono espaçada correta. Exemplo sem identação</p>
+            <code>
+                num = int(imput('digite um número'))
+                if num % 2 == 0
+                    print(f' O número {num} é PAR')
+                else:
+                    print(f' o número {num} e IMPAR')
+                print('Fim do programa')
+            </code>
+            <p><br>Fazendo a uitilizaçlão da TAG pre /pre o codigo exemplificado entra em identação de forma natural Ex:</p>
+            <pre>
+                <code>
+num = int(imput('digite um número'))
+if num % 2 == 0
+    print(f' O número {num} é PAR')
+else:
+    print(f' o número {num} e IMPAR')
+print('Fim do programa')
+<br>OBS: Fazendo a utilização do atalho SHIFT+TAB toda a linha de "Codigo" escrita no exemplo toca alinhado ao lado lateral esquerdo um espaçamento por vez.
+                </code>
+            </pre>
+        <h2>Citações</h2>
+            <p>Como diria o pai de um amigo o <q>computador é um burro muito rapido.</q></p>
+            <p><br>Como podemos vêr no exeplo acima a forma de fazer uma citação mantendo a semantica do html é utilizando a tag q /q.</p>
+        <h2>Citações Completas</h2>        
+            <p>Segundo Jeff Nobel no seu libro HTML para Leigos:</p>
+                <blockquote cite="www.google.com.br">
+                    Frase Aletoria para efeitos de Texto HTML and CSS
+                </blockquote>
+            <p>Para fazer uma citação em Bloco de forma doslocada e destacada e necessario a utilização da TAG blockquote /blockquote (De forma semantica), fazendo a utilização dentro da TAG do comando <q>cite="www.google.com.br"</q> <br> Como nesse exemplo asseguir:
+                <blockquote>(blockquote cite="www.google.com.br")</blockquote></p>
+        <h2>Abreviações</h2>
+                <p>Estou estudando <abbr title="HyperTex Markup Lenguage and Cascading Style Sheets">HTML and CSS</abbr>, Estou Adorando</p>
+                <p>Nesse Exempo acima Foi feita a utilização de TAG "abbr title=" para fazer a marcação do texto com um titulo para facilitar a localização pelos mecanismos de busca</p>
+    <h1>Trabalhando com Listas</h1>
+        <h2>Listas Ordenadas</h2>
+                <p>A tag para começar uma lista de forma ordenada e a TAG ol /ol assim dentro dela para fazer uma lista sequencial Ex de 1 a 10 Usamos a TAG li /li sendo o /li um comando opicional</p>
+            <ol>
+                <li>Acordar</li>
+                <li>Tomar café</li>
+                <li>Escovar os Dentes</li>
+                <li>Tomar Banho</li>
+                <li>Trocar de Roupa</li>
+                <li>Arrumar minha bolsa</li>
+                <li>Calçar meu sapato</li>
+                <li>Abrir a porta de casa</li>
+                <li>Sair pela porta</li>
+                <li>Fechar a porta</li>
+                <li>Conferir se a porta esta fechada</li>
+                <li>Andar até a pista</li>
+                <li>Olhar para esquerda</li>
+                <li>Olhar para direita</li>
+                <li>Atravessar a rua</li>
+                <li>Chegar no ponto de onibus</li>
+                <li>Esperar o onibus</li>
+                <li>Pegar o onibus</li>
+                <li>Sentar no onibus</li>
+                <li>Descer do onibus</li>
+                <li>CHegar no trabalho</li>
+            </ol>
+                <p>Para fazer a personalização da TAG podemos utilizar o parametro TYPE = como vemos no proximo exemplo:</p>
+            <ol type="I">   <!-- A a I i 1-->
+                <li>Acordar</li>
+                <li>Tomar café</li>
+                <li>Escovar os Dentes</li>
+                <li>Tomar Banho</li>
+                <li>Trocar de Roupa</li>
+                <li>Arrumar minha bolsa</li>
+            </ol>
+                <p>Para fazer com que a numeração ou sequencia da lista começe de um ponto em espessifico usamos o parametro star =:</p>
+            <ol type="I" start="3">
+                <li>Acordar</li>
+                <li>Tomar café</li>
+                <li>Escovar os Dentes</li>
+                <li>Tomar Banho</li>
+                <li>Trocar de Roupa</li>
+                <li>Arrumar minha bolsa</li>
+            </ol>
+        <h2>Listas Não Ordenadas</h2>
+                <p>Para a utilização das listas não ordenadas utilizamos a TAG ul /ul</p>
+                    <p>Lista da Feira do mês</p>
+            <ul>
+                <li>Café</li>
+                <li>Açucar</li>
+                <li>Biscoitos</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Frango</li>
+            </ul>
+                <p>Para fazer a personalização da Tag utilizamos o parametro type= porem com as variações "circle" "disk" "square" assim fazendo as seguintes mudanças<br></p>
+                <p>Com o type="disk"</p>
+            <ul type="disk">  <!--disk circle square-->
+                <li>Café</li>
+                <li>Açucar</li>
+                <li>Biscoitos</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Frango</li>
+            </ul>
+                <p>Com o type="circle"</p>
+            <ul type="circle">
+                <li>Café</li>
+                <li>Açucar</li>
+                <li>Biscoitos</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Frango</li>
+            </ul>
+                <p>Com o type="square"</p>
+            <ul type="square">
+                <li>Café</li>
+                <li>Açucar</li>
+                <li>Biscoitos</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Frango</li>
+            </ul>
+        <h2>Juntando Listas</h2>
+                <p>Nesse exemplo veremos como fazer a integração entre os mais variados tipos de listas</p>
+                <p>Alimentos e seus Nutrientres dos alimentos</p>
+            <ol>
+                <li>Café</li>
+                    <ul type ="square">
+                        <li>Caféina</li>
+                        <li>Taurina</li>
+                        <li>Anodrotina</li>
+                    </ul>
+                <li>Açucar</li>
+                <li>Biscoitos</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+                <li>Frango</li>
+            </ol>
+            <p>Para que o exemplo acima ficasse dentro dos paramentros o codigo foi inserido da seguinte forma<br></p>
+            <pre>
+ol
+    li Café /li
+        ul type ="square"
+        li Caféina /li
+        li Taurina /li
+        li Anodrotina /li
+        /ul
+    li Açucar /li
+    li Biscoitos /li
+    li Arroz /li
+    li Feijão /li
+    li Frango /li
+/ol
+            </pre>
+        <h2>Lista de Definições</h2>
+            <dl style="color: blueviolet;">
+                <dt>Termo</dt>
+                <dd>Descrição</dd>
+            </dl>
+            <p>Para a criação de uma lista de definições usamo as TAG's dl /dl e dentro dessa TAG fazemos a utilização de mais duas marcações a dt /dt utilizada para inserir o termo e a dd /dd para fazer a inserção da descrição exemplo:<br></p>
+        <pre>
+dl
+    dt Termo /dt
+    dd Descrição /dd
+dl
+        </pre>
+    <h1>Implementação e usabilidade de Links Externos</h1>
+        <p>Clique <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY" target="_blank" rel="nofollow">aqui</a> e venha para nossa incrivel video aula sobre HTML/CSS</p>
+        <p>Para a imprementação de links em texto fazemos o uso da TAG a href="" /a</p>
+        <p>Para fazer a abertura do link em uma nova pagina usamos o parametro target"_blank" rel="extrenal"</p>
+        <p>Clique <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY" target="_blank" rel="external"><strong>aqui</strong></a> e seja redirecionado para a nossa aula sobre HTML/CSS</p>
+        <h2>Fazendo a utilização de Links Internos</h2>
+            <p>Para exemplificar a utilização de links internos você pode clicar <a href="pag002.html" target="_self" rel="next">Segunda pagina de exemplo</a></p>
+            <p>Para ir para nossa pagina de noticiais clique <a href="noticias/pag003.html" target="_self" rel="next">aqui</a></p>
+    <h1>Link's para download</h1>
+        <p>Para seguir aos exemplos e exercícios de download clique <a href="Exercicios e Exemplos link's com dowload/PagDowload.html" target="_self" rel="next">aqui</a></p>
+        <p><blockquote><em><strong>Daqui para frente todos os Exercícios e exemplos serão direcionados para outros link's ou páginas com o objetivo de treinar os conhecimentos de ligação entre paginas, assim com também todos os proximo exercícios devem por obrigação ter uma imagem indexada como exemplo.</strong></em></blockquote></p>
+    <h1>Desafios para finalização do Primeiro Modulo</h1>
+        <p>Segue Abaixo os links para visualização de cada exercício feito para conclusão do modulo</p>
+        <ul>
+            <li>Desafio <a href="Desafios/DesafioN1.html" target="_self" rel="next">N 1º</a></li>
+
+            <li>Desafio <a href="Desafios/DesafioN2.html" target="_self" rel="next">N 2º</a></li>
+        </ul>
+    <h1>Imagens Dinâmicas</h1>
+        <p>Nesse exercício veremos como fazer imagens responsivas para qualquer tipo de dispositivo<br> para seguir a aula de <strong>Imagens Dinâmicas</strong> <a href="ImgDinamicas.html" target="_self" rel="next">clique aqui.</a></p>
+
+    <h1>Utilização de Arquivos de Audio</h1>
+        <p>Para ir a pagina desse exercício clicar <a href="pagina audio e video.html" target="_self" rel="next">aqui.</a></p>
+
+    <h1>Ultimo Desafio</h1>
+        <p>Para prosseguir ao Ultimo desafio do modulo básico Clique <a href="desafio.html" target="_self" rel="next">Aqui.</a></p>
+</body>
+</html>

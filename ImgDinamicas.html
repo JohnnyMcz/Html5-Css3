@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Dinâmicas</title>
+</head>
+<body>
+
+    <h1>Imagens Dinâmicas</h1>
+        <p>Para diferentes tipos de dispositivos é essencial que seu código seja responsivo e se adeque para toda e qualquer resolução de aparelhos como veremos nesse exemplo abaixo.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/m.png" type="image/png">
+        <img src="img/g.png" alt="Imagem Principal">
+    </picture>
+
+        <p>Como podemos vêr (Para funcionalidade do exemplo favor diminuir o navegador) que ao mudar o tamanho da tela as img's se adaptam de forma natural sem criar a barra de rolagem na parte inferior, Para que seja possível essa transformação utilizamos duas TAG's a picture /picture e a source /source senda ela de media tipe começando sempre de forma decrescente da maior para a menor como no exemplo do código abaixo</p>
+
+        <pre>
+            picture
+                source media="(max-width: 750px)" srcset="img/p.png" type="image/png"
+                source media="(max-width: 1050px)" srcset="img/m.png" type="image/png"
+                img src="img/g.png" alt="Imagem Principal"
+            /picture
+        </pre>
+
+        <p>Vamos para um segundo exemplo com uma imagem da equipe de Cs:Go Furia</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="img/furiaP.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="img/furiaM.png" type="image/png">
+            <img src="img/furiaG.png" alt="imagem secundaria">
+        </picture>
+
+        <p>Para voltar a pagina principal dos Exercicios clique <a href="../Ex 006/index.html" target="_self" rel="prev">Aqui.</a></p>
+</body>
+</html>
